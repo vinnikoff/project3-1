@@ -5,14 +5,15 @@ public class Main {
     public static void main(String[] args)
     {
         Bird bird = new Bird();
-        bird.say = "I am walking";
-        bird.sing();
-        bird.say = "I am flying";
-        bird.sing();
-        bird.say = "I am singing";
-        bird.sing();
-        bird.say = "I am Bird";
-        bird.sing();
+        bird.setSay ("I am walking");
+        bird.sing( bird.getSay() );
+        bird.setSay ("I am flying");
+        bird.sing( bird.getSay() );
+        bird.setSay ("I am singing");
+        bird.sing( bird.getSay() );
+        bird.setSay ("I am Bird");
+        bird.sing( bird.getSay() );
+
     }
 
 }

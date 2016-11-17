@@ -3,9 +3,19 @@
  */
 public class Bird {
 
-String say;
+    private String say;
 
-    public void sing ()
+    public String getSay()
+    {
+        return say;
+    }
+
+    public void setSay(String say)
+    {
+        this.say=say;
+    }
+
+    public void sing (String say)
     {
         System.out.println(say);
     }
